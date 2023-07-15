@@ -1,0 +1,37 @@
+import { CalendarIcon } from '@sanity/icons';
+import { defineType, type Rule } from 'sanity';
+
+export default defineType({
+  fields: [
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+      validation(rule: Rule): Rule {
+        return rule.required();
+      },
+    },
+    {
+      name: 'startsAt',
+      title: 'Starts At',
+      type: 'datetime',
+      validation(rule: Rule): Rule {
+        return rule.required();
+      },
+    },
+    {
+      name: 'endsAt',
+      title: 'Ends At',
+      type: 'datetime',
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      type: 'blockContent',
+    },
+  ],
+  icon: CalendarIcon,
+  name: 'calendarEvent',
+  title: 'Calendar Event',
+  type: 'document',
+});
