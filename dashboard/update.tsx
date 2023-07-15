@@ -11,7 +11,7 @@ export type DocumentListConfig = {
   limit?: number;
   order?: string;
   query?: string;
-  queryParams?: Record<string, any>;
+  queryParams?: Record<string, unknown>;
 
   showCreateButton?: boolean;
   title?: string;
