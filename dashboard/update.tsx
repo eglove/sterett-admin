@@ -23,8 +23,22 @@ function UpdateWidget(): JSX.Element {
     <DashboardWidgetContainer header="Latest Updates">
       <ul>
         <li>
-          Expanded size of News page to find a middle ground between
-          mobile/desktop.
+          <time>
+            <strong>
+              {new Date('07/19/2023').toLocaleDateString('en-US', {
+                dateStyle: 'medium',
+              })}
+            </strong>
+          </time>{' '}
+          - Expanded size of{' '}
+          <a
+            href="https://sterettcreekvillagetrustee.com/news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            News page
+          </a>{' '}
+          to find a middle ground between mobile/desktop.
         </li>
         <li>
           Calendar now uses native dialog for popups to help page load faster.
