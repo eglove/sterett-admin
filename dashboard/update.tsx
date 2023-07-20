@@ -23,6 +23,10 @@ function UpdateWidget(): JSX.Element {
     <DashboardWidgetContainer header="Latest Updates">
       <ul>
         <li>
+          Expanded size of News page to find a middle ground between
+          mobile/desktop.
+        </li>
+        <li>
           Calendar now uses native dialog for popups to help page load faster.
         </li>
         <li>
