@@ -21,7 +21,7 @@
     "@sanity/icons": "^2.4.1",
     "@sanity/orderable-document-list": "^1.1.0",
     "@sanity/vision": "^3.14.3",
-    "@types/react": "18.2.15",
+    "@types/react": "18.2.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.4",
     "eslint": "^8.45.0",
-    "eslint-config-ethang": "^6.7.0",
+    "eslint-config-ethang": "^6.7.1",
     "typescript": "^5.1.6"
   }
 }
