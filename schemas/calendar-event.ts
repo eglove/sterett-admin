@@ -23,6 +23,9 @@ export default defineType({
       name: 'endsAt',
       title: 'Ends At',
       type: 'datetime',
+      validation(rule: Rule): Rule {
+        return rule.min(rule.valueOfField('startsAt'));
+      },
     },
     {
       name: 'description',

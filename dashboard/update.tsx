@@ -35,7 +35,9 @@ function UpdateWidget(): JSX.Element {
           - Multiple style changes. Images on pages have a blur effect on load,
           and show a filtered shadow effect. The news page uses newly styled
           cards. Links on the files page dim on hover. Trustees cards are styled
-          with image effects. Updated calendar event info popup.
+          with image effects. Updated calendar event info popup. Added
+          validation so that the end date of calendar events must come after
+          start dates.
         </li>
         <li>
           <time>
