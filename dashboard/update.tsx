@@ -29,9 +29,12 @@ function UpdateWidget(): JSX.Element {
     <DashboardWidgetContainer header="Latest Updates">
       <ul>
         <li>
-          <time>{formatDate('08/02/2023')}</time> - Reformatted news page to be
-          in ascending order. Older news and events will no longer show. The
-          color backgrounds on trustees are now randomized.
+          <time>
+            <strong>{formatDate('08/02/2023')}</strong>
+          </time>{' '}
+          - Reformatted news page to be in ascending order. Older news and
+          events will no longer show. The color backgrounds on trustees are now
+          randomized.
         </li>
         <li>
           <time>
