@@ -18,17 +18,28 @@ export type DocumentListConfig = {
   types?: string[];
 };
 
+const formatDate = (date: string): string => {
+  return new Date(date).toLocaleDateString('en-US', {
+    dateStyle: 'medium',
+  });
+};
+
 function UpdateWidget(): JSX.Element {
   return (
     <DashboardWidgetContainer header="Latest Updates">
       <ul>
         <li>
           <time>
-            <strong>
-              {new Date('07/19/2023').toLocaleDateString('en-US', {
-                dateStyle: 'medium',
-              })}
-            </strong>
+            <strong>{formatDate('08/01/2023')}</strong>
+          </time>{' '}
+          - Multiple style changes. Images on pages have a blur effect on load,
+          and show a filtered shadow effect. The news page uses newly styled
+          cards. Links on the files page dim on hover. Trustees cards are styled
+          with image effects.
+        </li>
+        <li>
+          <time>
+            <strong>{formatDate('07/19/2023')}</strong>
           </time>{' '}
           - Expanded size of{' '}
           <a
