@@ -25,11 +25,6 @@ export default defineType({
       },
     },
     {
-      name: 'expireDate',
-      title: 'Expires Date',
-      type: 'date',
-    },
-    {
       name: 'description',
       title: 'Description',
       type: 'blockContent',
