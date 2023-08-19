@@ -18,10 +18,32 @@ export default defineType({
         };
       },
       name: 'date',
-      title: 'Date',
+      title: 'Start Showing',
       type: 'date',
       validation(rule: Rule): Rule {
         return rule.required();
+      },
+    },
+    {
+      name: 'expireDate',
+      title: 'Stop Showing',
+      type: 'date',
+      validation(Rule): Rule {
+        return Rule.custom((expireDate: string, context) => {
+          if (context.document === undefined) {
+            return true;
+          }
+
+          const dateFieldValue = new Date(context.document.date as string);
+          dateFieldValue.setDate(dateFieldValue.getDate() + 1);
+          const expireDateValue = new Date(expireDate);
+
+          if (expireDateValue < dateFieldValue) {
+            return 'Expiration date must be at least one day after the date';
+          }
+
+          return true;
+        });
       },
     },
     {
