@@ -30,6 +30,10 @@ export default defineType({
       type: 'date',
       validation(Rule): Rule {
         return Rule.custom((expireDate: string, context) => {
+          if (expireDate === undefined) {
+            return 'Value is required';
+          }
+
           if (context.document === undefined) {
             return true;
           }

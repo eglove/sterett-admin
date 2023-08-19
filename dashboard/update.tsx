@@ -30,6 +30,14 @@ function UpdateWidget(): JSX.Element {
       <ul>
         <li>
           <time>
+            <strong>{formatDate('08/18/2023')}</strong>
+          </time>{' '}
+          - New requirement to News Updates for &ldquo;Stop Showing&rdquo;
+          dates. This date will note when news updates should stop showing on
+          the website.
+        </li>
+        <li>
+          <time>
             <strong>{formatDate('08/02/2023')}</strong>
           </time>{' '}
           - Reformatted news page to be in ascending order. Older news and
