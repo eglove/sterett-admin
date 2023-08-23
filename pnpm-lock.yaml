@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^8.47.0
     version: 8.47.0
   eslint-config-ethang:
-    specifier: ^8.1.4
-    version: 8.1.4(eslint@8.47.0)(prettier@3.0.2)(tailwindcss@3.3.3)(typescript@5.1.6)
+    specifier: ^8.2.0
+    version: 8.2.0(eslint@8.47.0)(prettier@3.0.2)(tailwindcss@3.3.3)(typescript@5.1.6)
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
@@ -4033,8 +4033,8 @@ packages:
       source-map: 0.6.1
     dev: false
 
-  /eslint-config-ethang@8.1.4(eslint@8.47.0)(prettier@3.0.2)(tailwindcss@3.3.3)(typescript@5.1.6):
-    resolution: {integrity: sha512-rgUYfj5P40Npi0/9oOu4VJZtmw/xz+iT6sKhWjYF8iPXHkpuyVUPnMU5ErQBpg+OttAS9FVwoeUxXjEAib/tFA==}
+  /eslint-config-ethang@8.2.0(eslint@8.47.0)(prettier@3.0.2)(tailwindcss@3.3.3)(typescript@5.1.6):
+    resolution: {integrity: sha512-cFc/Kdw3xOLfmtA3dckhkezWu5ML7fLiM/8e6ovKkze8sq+txFkz4DtTqgKu6ZRaLwnEXHGkkDGkvHh7GLIqCw==}
     peerDependencies:
       eslint: ^8.44.0
       prettier: ^3.0.0
