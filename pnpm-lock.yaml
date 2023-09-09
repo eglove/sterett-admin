@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^8.49.0
     version: 8.49.0
   eslint-config-ethang:
-    specifier: ^10.0.4
-    version: 10.0.4(eslint@8.49.0)(prettier@3.0.3)(tailwindcss@3.3.3)(typescript@5.2.2)
+    specifier: ^10.0.5
+    version: 10.0.5(eslint@8.49.0)(prettier@3.0.3)(tailwindcss@3.3.3)(typescript@5.2.2)
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -3263,8 +3263,8 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /array.prototype.tosorted@1.1.1:
-    resolution: {integrity: sha512-pZYPXPRl2PqWcsUs6LOMn+1f1532nEoPTYowBtqLwAW+W8vSVhkIGnmOX1t/UQjD6YGI0vcD2B1U7ZFGQH9jnQ==}
+  /array.prototype.tosorted@1.1.2:
+    resolution: {integrity: sha512-HuQCHOlk1Weat5jzStICBCd83NxiIMwqDg/dHEsoefabn/hJRj5pVdWcPUSpRrwhwxZOsQassMpgN/xRYFBMIg==}
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.2.0
@@ -4060,7 +4060,7 @@ packages:
       object-keys: 1.1.1
       object.assign: 4.1.4
       regexp.prototype.flags: 1.5.0
-      safe-array-concat: 1.0.0
+      safe-array-concat: 1.0.1
       safe-regex-test: 1.0.0
       string.prototype.trim: 1.2.7
       string.prototype.trimend: 1.0.6
@@ -4089,7 +4089,7 @@ packages:
       has-symbols: 1.0.3
       internal-slot: 1.0.5
       iterator.prototype: 1.1.1
-      safe-array-concat: 1.0.0
+      safe-array-concat: 1.0.1
     dev: true
 
   /es-set-tostringtag@2.0.1:
@@ -4212,8 +4212,8 @@ packages:
       source-map: 0.6.1
     dev: false
 
-  /eslint-config-ethang@10.0.4(eslint@8.49.0)(prettier@3.0.3)(tailwindcss@3.3.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-jQPgUcTiIIa4s5WB4z2Zl9LLbXQCYGLkayP/s2ytQtGGTNq8GVkEYa6R2/yGhBM22DprCb1v9eCzJWvWSPQspw==}
+  /eslint-config-ethang@10.0.5(eslint@8.49.0)(prettier@3.0.3)(tailwindcss@3.3.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-diTfKetsTiYy3wwYdva8Fi5H8HCDbKzCw60TsImnGTqvrZIeqvGHj39jfw8c/ny/6bUytP4j5wdAIOOAqMLVwA==}
     peerDependencies:
       eslint: ^8.49.0
       prettier: ^3.0.3
@@ -4466,7 +4466,7 @@ packages:
     dependencies:
       array-includes: 3.1.7
       array.prototype.flatmap: 1.3.2
-      array.prototype.tosorted: 1.1.1
+      array.prototype.tosorted: 1.1.2
       doctrine: 2.1.0
       es-iterator-helpers: 1.0.14
       eslint: 8.49.0
@@ -7034,8 +7034,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /safe-array-concat@1.0.0:
-    resolution: {integrity: sha512-9dVEFruWIsnie89yym+xWTAYASdpw3CJV7Li/6zBewGf9z2i1j31rP6jnY0pHEO4QZh6N0K11bFjWmdR8UGdPQ==}
+  /safe-array-concat@1.0.1:
+    resolution: {integrity: sha512-6XbUAseYE2KtOuGueyeobCySj9L4+66Tn6KQMOPQJrAJEowYKW/YR/MGJZl7FdydUdaFu4LYyDZjxf4/Nmo23Q==}
     engines: {node: '>=0.4'}
     dependencies:
       call-bind: 1.0.2
