@@ -31,8 +31,8 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^3.0.1",
-    "eslint": "^8.49.0",
-    "eslint-config-ethang": "^11.0.0",
+    "eslint": "^8.50.0",
+    "eslint-config-ethang": "^11.0.1",
     "typescript": "^5.2.2"
   }
 }
