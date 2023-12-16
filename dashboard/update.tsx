@@ -30,6 +30,12 @@ function UpdateWidget(): JSX.Element {
       <ul>
         <li>
           <time>
+            <strong>{formatDate('12/15/2023')}</strong>
+          </time>
+          - Site upgraded to use QwikJS for performance improvements.
+        </li>
+        <li>
+          <time>
             <strong>{formatDate('08/18/2023')}</strong>
           </time>{' '}
           - New requirement to News Updates for &ldquo;Stop Showing&rdquo;
