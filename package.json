@@ -32,7 +32,7 @@
     "@ethang/project-builder": "^1.1.15",
     "@sanity/eslint-config-studio": "^3.0.1",
     "eslint": "^8.56.0",
-    "eslint-config-ethang": "^11.7.0",
+    "eslint-config-ethang": "^11.7.1",
     "typescript": "^5.3.3"
   }
 }
