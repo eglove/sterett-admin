@@ -29,10 +29,10 @@
     "styled-components": "^6.1.6"
   },
   "devDependencies": {
-    "@ethang/project-builder": "^1.1.15",
+    "@ethang/project-builder": "^1.1.16",
     "@sanity/eslint-config-studio": "^3.0.1",
     "eslint": "^8.56.0",
-    "eslint-config-ethang": "^11.7.2",
+    "eslint-config-ethang": "^11.7.3",
     "typescript": "^5.3.3"
   }
 }
