@@ -1,6 +1,9 @@
 import { DocumentTextIcon } from '@sanity/icons';
 import { defineType, type Rule } from 'sanity';
 
+const MIN_SLUG_CHARS = 0;
+const MAX_SLUG_CHARS = 200;
+
 export default defineType({
   fields: [
     {
@@ -15,7 +18,10 @@ export default defineType({
       name: 'slug',
       options: {
         slugify(input: string): string {
-          return input.toLowerCase().replaceAll(/\s+/g, '-').slice(0, 200);
+          return input
+            .toLowerCase()
+            .replaceAll(/\s+/gu, '-')
+            .slice(MIN_SLUG_CHARS, MAX_SLUG_CHARS);
         },
         source: 'title',
       },

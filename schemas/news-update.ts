@@ -29,7 +29,8 @@ export default defineType({
       title: 'Stop Showing',
       type: 'date',
       validation(Rule): Rule {
-        return Rule.custom((expireDate: string, context) => {
+        // eslint-disable-next-line max-statements
+        return Rule.custom((expireDate: string | undefined, context) => {
           if (expireDate === undefined) {
             return 'Value is required';
           }
@@ -38,8 +39,9 @@ export default defineType({
             return true;
           }
 
+          const INCREMENT = 1;
           const dateFieldValue = new Date(context.document.date as string);
-          dateFieldValue.setDate(dateFieldValue.getDate() + 1);
+          dateFieldValue.setDate(dateFieldValue.getDate() + INCREMENT);
           const expireDateValue = new Date(expireDate);
 
           if (expireDateValue < dateFieldValue) {

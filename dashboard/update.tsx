@@ -24,6 +24,7 @@ const formatDate = (date: string): string => {
   });
 };
 
+// eslint-disable-next-line max-lines-per-function
 function UpdateWidget(): JSX.Element {
   return (
     <DashboardWidgetContainer header="Latest Updates">
