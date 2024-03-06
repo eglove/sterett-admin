@@ -30,6 +30,9 @@ function UpdateWidget(): JSX.Element {
     <DashboardWidgetContainer header="Latest Updates">
       <ul>
         <li>
+          <strong>{formatDate('03/06/2024')}</strong>- Added Beyonder Events
+        </li>
+        <li>
           <time>
             <strong>{formatDate('12/15/2023')}</strong>
           </time>
