@@ -20,5 +20,11 @@ export const deskStructure: StructureResolver = (
         title: 'Trustees Order',
         type: 'trustee',
       }),
+      orderableDocumentListDeskItem({
+        S,
+        context,
+        title: 'Navigation Order',
+        type: 'navigation',
+      }),
     ]);
 };
