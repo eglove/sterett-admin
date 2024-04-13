@@ -1,3 +1,4 @@
+// @ts-expect-error allow cjs import
 import { codeInput } from '@sanity/code-input';
 import { dashboardTool, projectUsersWidget } from '@sanity/dashboard';
 import { visionTool } from '@sanity/vision';
@@ -12,6 +13,7 @@ const widgets = [
 ];
 
 export const developmentPlugins = [
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
   deskTool({
     structure: deskStructure,
   }),
@@ -21,6 +23,7 @@ export const developmentPlugins = [
 ];
 
 export const productionPlugins = [
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
   deskTool({
     structure: deskStructure,
   }),
