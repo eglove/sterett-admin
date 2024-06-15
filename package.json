@@ -5,12 +5,13 @@
   "description": "",
   "main": "package.json",
   "author": "Ethan Glover <hello@ethang.email>",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
     "build": "sanity build",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix --ignore-pattern \"dist/*\" --ignore-pattern **/*.mjs --ignore-pattern \".sanity/*\""
   },
   "keywords": [
     "sanity"
@@ -29,10 +30,11 @@
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
+    "@ethang/eslint-config": "^16.3.1",
     "@ethang/project-builder": "^1.1.39",
     "@sanity/eslint-config-studio": "^4.0.0",
-    "eslint": "^8.57.0",
-    "eslint-config-ethang": "^14.1.10",
-    "typescript": "^5.4.5"
+    "eslint": "^9.5.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0"
   }
 }

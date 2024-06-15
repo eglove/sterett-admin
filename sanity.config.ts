@@ -1,20 +1,21 @@
-import * as process from 'node:process';
+import * as process from "node:process";
 
-import { defineConfig } from 'sanity';
+import { defineConfig } from "sanity";
 
-import schema from './schemas/schema';
-import { developmentPlugins, productionPlugins } from './util-sanity-config';
+import schema from "./schemas/schema.ts";
+import { developmentPlugins, productionPlugins } from "./util-sanity-config.ts";
 
 export default defineConfig({
-  dataset: 'production',
-  name: 'default',
+  dataset: "production",
+  name: "default",
+  // @ts-expect-error PluginOptions[]
   plugins:
-    process.env.NODE_ENV === 'development'
+    "development" === process.env.NODE_ENV
       ? developmentPlugins
       : productionPlugins,
-  projectId: '540gjnt8',
+  projectId: "540gjnt8",
   schema: {
     types: schema,
   },
-  title: 'Sterett Creek Village Trustee Admin',
+  title: "Sterett Creek Village Trustee Admin",
 });

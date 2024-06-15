@@ -1,12 +1,12 @@
-import { BulbOutlineIcon } from '@sanity/icons';
-import { defineType, type Rule } from 'sanity';
+import { BulbOutlineIcon } from "@sanity/icons";
+import { defineType, type Rule } from "sanity";
 
 export default defineType({
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
+      name: "title",
+      title: "Title",
+      type: "string",
       validation(rule: Rule): Rule {
         return rule.required();
       },
@@ -17,22 +17,22 @@ export default defineType({
           date: new Date(),
         };
       },
-      name: 'date',
-      title: 'Start Showing',
-      type: 'date',
+      name: "date",
+      title: "Start Showing",
+      type: "date",
       validation(rule: Rule): Rule {
         return rule.required();
       },
     },
     {
-      name: 'expireDate',
-      title: 'Stop Showing',
-      type: 'date',
+      name: "expireDate",
+      title: "Stop Showing",
+      type: "date",
       validation(Rule): Rule {
         // eslint-disable-next-line max-statements
         return Rule.custom((expireDate: string | undefined, context) => {
           if (expireDate === undefined) {
-            return 'Value is required';
+            return "Value is required";
           }
 
           if (context.document === undefined) {
@@ -45,7 +45,7 @@ export default defineType({
           const expireDateValue = new Date(expireDate);
 
           if (expireDateValue < dateFieldValue) {
-            return 'Expiration date must be at least one day after the date';
+            return "Expiration date must be at least one day after the date";
           }
 
           return true;
@@ -53,16 +53,16 @@ export default defineType({
       },
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'blockContent',
+      name: "description",
+      title: "Description",
+      type: "blockContent",
       validation(rule: Rule): Rule {
         return rule.required();
       },
     },
   ],
   icon: BulbOutlineIcon,
-  name: 'newsUpdate',
-  title: 'News Update',
-  type: 'document',
+  name: "newsUpdate",
+  title: "News Update",
+  type: "document",
 });
