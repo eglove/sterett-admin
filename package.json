@@ -7,6 +7,9 @@
   "author": "Ethan Glover <hello@ethang.email>",
   "type": "module",
   "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
