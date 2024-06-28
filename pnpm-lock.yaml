@@ -46,8 +46,8 @@ importers:
         specifier: ^17.0.11
         version: 17.0.11(@eslint/js@9.5.0)(@tanstack/eslint-plugin-query@5.47.0(eslint@9.5.0)(typescript@5.5.2))(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(eslint-config-prettier@9.1.0(eslint@9.5.0))(eslint-plugin-astro@1.2.2(eslint@9.5.0)(typescript@5.5.2))(eslint-plugin-jsx-a11y@6.9.0(eslint@9.5.0))(eslint-plugin-n@17.9.0(eslint@9.5.0))(eslint-plugin-perfectionist@2.11.0(astro-eslint-parser@1.0.2(typescript@5.5.2))(eslint@9.5.0)(typescript@5.5.2))(eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0(eslint@9.5.0))(eslint@9.5.0)(prettier@3.3.2))(eslint-plugin-react-hooks@4.6.2(eslint@9.5.0))(eslint-plugin-react@7.34.3(eslint@9.5.0))(eslint-plugin-sonarjs@1.0.3(eslint@9.5.0))(eslint-plugin-unicorn@54.0.0(eslint@9.5.0))(eslint@9.5.0)(prettier@3.3.2)(typescript-eslint@7.14.1(eslint@9.5.0)(typescript@5.5.2))(typescript@5.5.2)
       '@ethang/project-builder':
-        specifier: ^1.1.40
-        version: 1.1.40(chalk@5.3.0)(inquirer@9.3.1)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.25.0)(tsup@8.1.0(postcss@8.4.38)(typescript@5.5.2))(typescript@5.5.2)
+        specifier: ^1.1.41
+        version: 1.1.41(chalk@5.3.0)(inquirer@9.3.1)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.25.0)(tsup@8.1.0(postcss@8.4.38)(typescript@5.5.2))(typescript@5.5.2)
       '@sanity/eslint-config-studio':
         specifier: ^4.0.0
         version: 4.0.0(eslint@9.5.0)(typescript@5.5.2)
@@ -1107,8 +1107,8 @@ packages:
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
 
-  '@eslint-community/regexpp@4.10.1':
-    resolution: {integrity: sha512-Zm2NGpWELsQAD1xsJzGQpYfvICSsFkEpU0jxBjfdC6uNEWXcHnfs9hScFWtXVDVl+rBQJGrl4g1vcKIejpH9dA==}
+  '@eslint-community/regexpp@4.11.0':
+    resolution: {integrity: sha512-G/M/tIiMrTAxEWRfLfQJMmGNX28IxBg4PBz8XqQhqUHLFI6TL2htpIB1iQCj144V5ee/JaKyT9/WZ0MGZWfA7A==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
   '@eslint/config-array@0.16.0':
@@ -1149,16 +1149,16 @@ packages:
       typescript: ^5.5.2
       typescript-eslint: ^7.14.1
 
-  '@ethang/project-builder@1.1.40':
-    resolution: {integrity: sha512-V2G/N+ANYDKSSnt7dVeYD9kDbiOKjfWx92/D2RgeUzFjsBki361ZNEIWQqyw1h+D/aV5uLkpJ59qnNX0M5c/5g==}
+  '@ethang/project-builder@1.1.41':
+    resolution: {integrity: sha512-pPJtx2kOQO0Vpgd1VgsuIWCyv5OeejL7FqVEFIau6jU3rRtTl2hJ+43wsUI5/lT1kUDtvfIGXXjWrxqF0K3JGg==}
     peerDependencies:
       chalk: ^5.3.0
-      inquirer: ^9.2.23
+      inquirer: ^9.3.1
       lodash: ^4.17.21
       rimraf: ^5.0.7
       simple-git: ^3.25.0
       tsup: ^8.1.0
-      typescript: ^5.4.5
+      typescript: ^5.5.2
 
   '@floating-ui/core@1.6.3':
     resolution: {integrity: sha512-1ZpCvYf788/ZXOhRQGFxnYQOVgeU+pi0i+d0Ow34La7qjIXETi6RNswGVKkA6KcDO8/+Ysu2E/CeUmmeEBDvTg==}
@@ -6296,7 +6296,7 @@ snapshots:
       eslint: 9.5.0
       eslint-visitor-keys: 3.4.3
 
-  '@eslint-community/regexpp@4.10.1': {}
+  '@eslint-community/regexpp@4.11.0': {}
 
   '@eslint/config-array@0.16.0':
     dependencies:
@@ -6344,7 +6344,7 @@ snapshots:
       typescript: 5.5.2
       typescript-eslint: 7.14.1(eslint@9.5.0)(typescript@5.5.2)
 
-  '@ethang/project-builder@1.1.40(chalk@5.3.0)(inquirer@9.3.1)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.25.0)(tsup@8.1.0(postcss@8.4.38)(typescript@5.5.2))(typescript@5.5.2)':
+  '@ethang/project-builder@1.1.41(chalk@5.3.0)(inquirer@9.3.1)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.25.0)(tsup@8.1.0(postcss@8.4.38)(typescript@5.5.2))(typescript@5.5.2)':
     dependencies:
       chalk: 5.3.0
       inquirer: 9.3.1
@@ -7263,7 +7263,7 @@ snapshots:
 
   '@typescript-eslint/eslint-plugin@7.14.1(@typescript-eslint/parser@7.14.1(eslint@9.5.0)(typescript@5.5.2))(eslint@9.5.0)(typescript@5.5.2)':
     dependencies:
-      '@eslint-community/regexpp': 4.10.1
+      '@eslint-community/regexpp': 4.11.0
       '@typescript-eslint/parser': 7.14.1(eslint@9.5.0)(typescript@5.5.2)
       '@typescript-eslint/scope-manager': 7.14.1
       '@typescript-eslint/type-utils': 7.14.1(eslint@9.5.0)(typescript@5.5.2)
@@ -8376,7 +8376,7 @@ snapshots:
   eslint-plugin-es-x@7.7.0(eslint@9.5.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.5.0)
-      '@eslint-community/regexpp': 4.10.1
+      '@eslint-community/regexpp': 4.11.0
       eslint: 9.5.0
       eslint-compat-utils: 0.5.1(eslint@9.5.0)
 
@@ -8504,7 +8504,7 @@ snapshots:
   eslint@9.5.0:
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.5.0)
-      '@eslint-community/regexpp': 4.10.1
+      '@eslint-community/regexpp': 4.11.0
       '@eslint/config-array': 0.16.0
       '@eslint/eslintrc': 3.1.0
       '@eslint/js': 9.5.0
