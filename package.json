@@ -33,10 +33,10 @@
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^17.1.1",
+    "@ethang/eslint-config": "^17.1.2",
     "@ethang/project-builder": "^1.1.43",
     "@sanity/eslint-config-studio": "^4.0.0",
-    "eslint": "^9.6.0",
+    "eslint": "^9.7.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.16.0"
   }
