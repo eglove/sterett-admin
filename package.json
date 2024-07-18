@@ -37,6 +37,7 @@
     "@ethang/project-builder": "^1.1.43",
     "@sanity/eslint-config-studio": "^4.0.0",
     "eslint": "^9.7.0",
+    "eslint-plugin-sonarjs": "1.0.3",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.16.0"
   }
