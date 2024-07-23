@@ -33,12 +33,12 @@
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^17.3.0",
-    "@ethang/project-builder": "^1.1.47",
+    "@ethang/eslint-config": "^17.4.0",
+    "@ethang/project-builder": "^1.1.48",
     "@sanity/eslint-config-studio": "^4.0.0",
     "eslint": "^9.7.0",
     "eslint-plugin-sonarjs": "1.0.3",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^7.16.1"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
   }
 }
