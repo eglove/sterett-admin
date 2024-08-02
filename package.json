@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@ethang/eslint-config": "^17.6.0",
-    "@ethang/project-builder": "^1.1.51",
+    "@ethang/project-builder": "^1.1.52",
     "@sanity/eslint-config-studio": "^4.0.0",
     "eslint": "^9.8.0",
     "typescript": "^5.5.4",
