@@ -43,8 +43,8 @@ importers:
         version: 6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@ethang/eslint-config':
-        specifier: ^18.0.0
-        version: 18.0.0(@eslint/js@9.8.0)(@tanstack/eslint-plugin-query@5.51.15(eslint@9.8.0)(typescript@5.5.4))(@typescript-eslint/parser@8.0.0(eslint@9.8.0)(typescript@5.5.4))(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint-plugin-jsx-a11y@6.9.0(eslint@9.8.0))(eslint-plugin-n@17.10.1(eslint@9.8.0))(eslint-plugin-perfectionist@3.1.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint-plugin-prettier@5.2.1(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3))(eslint-plugin-sonarjs@1.0.4(eslint@9.8.0))(eslint-plugin-unicorn@55.0.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3)(typescript-eslint@8.0.0(eslint@9.8.0)(typescript@5.5.4))(typescript@5.5.4)
+        specifier: ^18.0.2
+        version: 18.0.2(@eslint/js@9.8.0)(@tanstack/eslint-plugin-query@5.51.15(eslint@9.8.0)(typescript@5.5.4))(@typescript-eslint/parser@8.0.0(eslint@9.8.0)(typescript@5.5.4))(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint-plugin-astro@1.2.3(eslint@9.8.0)(typescript@5.5.4))(eslint-plugin-jsx-a11y@6.9.0(eslint@9.8.0))(eslint-plugin-n@17.10.1(eslint@9.8.0))(eslint-plugin-perfectionist@3.1.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint-plugin-prettier@5.2.1(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3))(eslint-plugin-react-hooks@4.6.2(eslint@9.8.0))(eslint-plugin-react@7.35.0(eslint@9.8.0))(eslint-plugin-sonarjs@1.0.4(eslint@9.8.0))(eslint-plugin-unicorn@55.0.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3)(typescript-eslint@8.0.0(eslint@9.8.0)(typescript@5.5.4))(typescript@5.5.4)
       '@ethang/eslint-config-react':
         specifier: ^1.0.1
         version: 1.0.1(@typescript-eslint/parser@8.0.0(eslint@9.8.0)(typescript@5.5.4))(eslint-plugin-react-hooks@4.6.2(eslint@9.8.0))(eslint-plugin-react@7.35.0(eslint@9.8.0))(typescript-eslint@8.0.0(eslint@9.8.0)(typescript@5.5.4))(typescript@5.5.4)
@@ -1280,8 +1280,8 @@ packages:
       typescript: ^5.5.4
       typescript-eslint: ^8.0.0
 
-  '@ethang/eslint-config@18.0.0':
-    resolution: {integrity: sha512-df2/Ficwakmm/224fCO96LS6e184F6P/BtSFRy3DI2VzLElTyNJ0HiKA+Kcsdl4voB2+u331HTjhAy4LMvEqEA==}
+  '@ethang/eslint-config@18.0.2':
+    resolution: {integrity: sha512-/v1SZlUk6cwLDDrkDaNYlAl0KUIwmDUUybdkR7dn9aK6H5KwGxgP1Mf/yatUF5uD8ZLrEGcpJoSNr7X4HE+V8g==}
     engines: {node: '>=20'}
     peerDependencies:
       '@eslint/js': ^9.8.0
@@ -1289,10 +1289,13 @@ packages:
       '@typescript-eslint/parser': ^8.0.0
       eslint: ^9.8.0
       eslint-config-prettier: ^9.1.0
+      eslint-plugin-astro: ^1.2.3
       eslint-plugin-jsx-a11y: ^6.9.0
       eslint-plugin-n: ^17.10.1
       eslint-plugin-perfectionist: ^3.1.0
       eslint-plugin-prettier: ^5.2.1
+      eslint-plugin-react: ^7.35.0
+      eslint-plugin-react-hooks: ^4.6.2
       eslint-plugin-sonarjs: 1.0.4
       eslint-plugin-unicorn: ^55.0.0
       prettier: ^3.3.3
@@ -2600,6 +2603,11 @@ packages:
     resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
     engines: {node: '>= 6'}
 
+  cssesc@3.0.0:
+    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
+    engines: {node: '>=4'}
+    hasBin: true
+
   cssstyle@4.0.1:
     resolution: {integrity: sha512-8ZYiJ3A/3OkDd093CBT/0UKDWry7ak4BdPTFP2+QEP7cmhouyq/Up709ASSj2cK02BbZiMgk7kYjZNS4QP5qrQ==}
     engines: {node: '>=18'}
@@ -2878,6 +2886,12 @@ packages:
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
+
+  eslint-plugin-astro@1.2.3:
+    resolution: {integrity: sha512-asHT0VUs68oppVnTHfp/WgLqs0yCx9kG9AC/PKLmp+87imeh3nGHMdFm0qP46vHxTM0NLDEhvmjFdAVAqw+QPQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=8.57.0'
 
   eslint-plugin-es-x@7.8.0:
     resolution: {integrity: sha512-7Ds8+wAAoV3T+LAKeu39Y5BzXCrGKrcISfgKEqTS4BDN8SFEDQd0S43jiQ8vIa3wUKD07qitZdfzlenSi8/0qQ==}
@@ -4267,6 +4281,10 @@ packages:
       yaml:
         optional: true
 
+  postcss-selector-parser@6.1.1:
+    resolution: {integrity: sha512-b4dlw/9V8A71rLIDsSwVmak9z2DuBUB7CA1/wSdelNEzqsjoSPeADTWNO09lpH49Diy3/JIZ2bSPB1dI3LJCHg==}
+    engines: {node: '>=4'}
+
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
@@ -5400,8 +5418,7 @@ snapshots:
       css-tree: 2.3.1
       is-potential-custom-element-name: 1.0.1
 
-  '@astrojs/compiler@2.10.1':
-    optional: true
+  '@astrojs/compiler@2.10.1': {}
 
   '@babel/code-frame@7.24.7':
     dependencies:
@@ -6691,17 +6708,20 @@ snapshots:
       typescript: 5.5.4
       typescript-eslint: 8.0.0(eslint@9.8.0)(typescript@5.5.4)
 
-  '@ethang/eslint-config@18.0.0(@eslint/js@9.8.0)(@tanstack/eslint-plugin-query@5.51.15(eslint@9.8.0)(typescript@5.5.4))(@typescript-eslint/parser@8.0.0(eslint@9.8.0)(typescript@5.5.4))(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint-plugin-jsx-a11y@6.9.0(eslint@9.8.0))(eslint-plugin-n@17.10.1(eslint@9.8.0))(eslint-plugin-perfectionist@3.1.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint-plugin-prettier@5.2.1(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3))(eslint-plugin-sonarjs@1.0.4(eslint@9.8.0))(eslint-plugin-unicorn@55.0.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3)(typescript-eslint@8.0.0(eslint@9.8.0)(typescript@5.5.4))(typescript@5.5.4)':
+  '@ethang/eslint-config@18.0.2(@eslint/js@9.8.0)(@tanstack/eslint-plugin-query@5.51.15(eslint@9.8.0)(typescript@5.5.4))(@typescript-eslint/parser@8.0.0(eslint@9.8.0)(typescript@5.5.4))(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint-plugin-astro@1.2.3(eslint@9.8.0)(typescript@5.5.4))(eslint-plugin-jsx-a11y@6.9.0(eslint@9.8.0))(eslint-plugin-n@17.10.1(eslint@9.8.0))(eslint-plugin-perfectionist@3.1.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint-plugin-prettier@5.2.1(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3))(eslint-plugin-react-hooks@4.6.2(eslint@9.8.0))(eslint-plugin-react@7.35.0(eslint@9.8.0))(eslint-plugin-sonarjs@1.0.4(eslint@9.8.0))(eslint-plugin-unicorn@55.0.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3)(typescript-eslint@8.0.0(eslint@9.8.0)(typescript@5.5.4))(typescript@5.5.4)':
     dependencies:
       '@eslint/js': 9.8.0
       '@tanstack/eslint-plugin-query': 5.51.15(eslint@9.8.0)(typescript@5.5.4)
       '@typescript-eslint/parser': 8.0.0(eslint@9.8.0)(typescript@5.5.4)
       eslint: 9.8.0
       eslint-config-prettier: 9.1.0(eslint@9.8.0)
+      eslint-plugin-astro: 1.2.3(eslint@9.8.0)(typescript@5.5.4)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@9.8.0)
       eslint-plugin-n: 17.10.1(eslint@9.8.0)
       eslint-plugin-perfectionist: 3.1.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
       eslint-plugin-prettier: 5.2.1(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.3.3)
+      eslint-plugin-react: 7.35.0(eslint@9.8.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@9.8.0)
       eslint-plugin-sonarjs: 1.0.4(eslint@9.8.0)
       eslint-plugin-unicorn: 55.0.0(eslint@9.8.0)
       prettier: 3.3.3
@@ -8084,13 +8104,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
-    optional: true
 
   astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.10.1):
     dependencies:
       '@astrojs/compiler': 2.10.1
       synckit: 0.9.1
-    optional: true
 
   async-mutex@0.4.1:
     dependencies:
@@ -8447,6 +8465,8 @@ snapshots:
       source-map-js: 1.2.0
 
   css-what@6.1.0: {}
+
+  cssesc@3.0.0: {}
 
   cssstyle@4.0.1:
     dependencies:
@@ -8879,6 +8899,21 @@ snapshots:
   eslint-config-prettier@9.1.0(eslint@9.8.0):
     dependencies:
       eslint: 9.8.0
+
+  eslint-plugin-astro@1.2.3(eslint@9.8.0)(typescript@5.5.4):
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.8.0)
+      '@jridgewell/sourcemap-codec': 1.5.0
+      '@typescript-eslint/types': 7.18.0
+      astro-eslint-parser: 1.0.2(typescript@5.5.4)
+      eslint: 9.8.0
+      eslint-compat-utils: 0.5.1(eslint@9.8.0)
+      globals: 15.9.0
+      postcss: 8.4.40
+      postcss-selector-parser: 6.1.1
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
   eslint-plugin-es-x@7.8.0(eslint@9.8.0):
     dependencies:
@@ -10288,6 +10323,11 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.40
       yaml: 2.5.0
+
+  postcss-selector-parser@6.1.1:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
 
