@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@ethang/eslint-config": "^18.0.0",
-    "@ethang/eslint-config-react": "^1.0.0",
+    "@ethang/eslint-config-react": "^1.0.1",
     "@ethang/project-builder": "^1.1.52",
     "@sanity/eslint-config-studio": "^4.0.0",
     "eslint": "^9.8.0",
