@@ -1,9 +1,10 @@
+import type { Rule } from "sanity";
+
 import { LinkIcon } from "@sanity/icons";
 import {
   orderRankField,
   orderRankOrdering,
 } from "@sanity/orderable-document-list";
-import type { Rule } from "sanity";
 import { defineType } from "sanity";
 
 export default defineType({

@@ -74,7 +74,7 @@ export function UpdateItems() {
     <>
       {items.map((item) => {
         return (
-          <UpdateItem key={item.id} date={item.date}>
+          <UpdateItem date={item.date} key={item.id}>
             {item.children}
           </UpdateItem>
         );

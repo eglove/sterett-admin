@@ -1,10 +1,11 @@
-import { orderableDocumentListDeskItem } from "@sanity/orderable-document-list";
 import type {
   ListBuilder,
   StructureBuilder,
   StructureResolver,
   StructureResolverContext,
 } from "sanity/desk";
+
+import { orderableDocumentListDeskItem } from "@sanity/orderable-document-list";
 
 export const deskStructure: StructureResolver = (
   S: StructureBuilder,
@@ -15,14 +16,14 @@ export const deskStructure: StructureResolver = (
     .items([
       ...S.documentTypeListItems(),
       orderableDocumentListDeskItem({
-        S,
         context,
+        S,
         title: "Trustees Order",
         type: "trustee",
       }),
       orderableDocumentListDeskItem({
-        S,
         context,
+        S,
         title: "Navigation Order",
         type: "navigation",
       }),

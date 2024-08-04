@@ -2,11 +2,11 @@ import type { PropsWithChildren } from "react";
 
 import { TimeDisplay } from "./time-display.js";
 
-type UpdateItemProperties = PropsWithChildren & {
+type UpdateItemProperties = {
   readonly date?: string;
-};
+} & Readonly<PropsWithChildren>;
 
-export function UpdateItem({ date, children }: UpdateItemProperties) {
+export function UpdateItem({ children, date }: UpdateItemProperties) {
   if (date !== undefined) {
     return (
       <li>

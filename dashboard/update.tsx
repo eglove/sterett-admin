@@ -1,9 +1,10 @@
+import type { JSX } from "react";
+
 import {
   type DashboardWidget,
   DashboardWidgetContainer,
   type LayoutConfig,
 } from "@sanity/dashboard";
-import type { JSX } from "react";
 
 import { UpdateItems } from "./update-items.js";
 
