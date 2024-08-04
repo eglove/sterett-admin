@@ -26,6 +26,7 @@
     "@sanity/orderable-document-list": "^1.2.1",
     "@sanity/vision": "^3.52.4",
     "@types/react": "18.3.3",
+    "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-is": "^18.3.1",
@@ -33,9 +34,10 @@
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^18.1.4",
+    "@ethang/eslint-config": "^18.1.7",
     "@ethang/project-builder": "^1.1.53",
     "@sanity/eslint-config-studio": "^4.0.0",
+    "@types/lodash": "^4.17.7",
     "eslint": "^9.8.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.0"

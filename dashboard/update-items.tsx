@@ -1,3 +1,5 @@
+import map from "lodash/map.js";
+
 import { UpdateItem } from "./update-item.js";
 
 const items = [
@@ -72,7 +74,7 @@ const items = [
 export function UpdateItems() {
   return (
     <>
-      {items.map((item) => {
+      {map(items, (item) => {
         return (
           <UpdateItem date={item.date} key={item.id}>
             {item.children}

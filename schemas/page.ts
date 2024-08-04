@@ -1,4 +1,5 @@
 import { DocumentTextIcon } from "@sanity/icons";
+import toLower from "lodash/toLower.js";
 import { defineType, type Rule } from "sanity";
 
 const MIN_SLUG_CHARS = 0;
@@ -18,8 +19,7 @@ export default defineType({
       name: "slug",
       options: {
         slugify(input: string): string {
-          return input
-            .toLowerCase()
+          return toLower(input)
             .replaceAll(/\s+/gu, "-")
             .slice(MIN_SLUG_CHARS, MAX_SLUG_CHARS);
         },
