@@ -34,11 +34,11 @@
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^18.4.9",
+    "@ethang/eslint-config": "^18.4.10",
     "@ethang/project-builder": "^2.3.5",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/lodash": "^4.17.7",
-    "eslint": "^9.8.0",
+    "eslint": "^9.9.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
   }
