@@ -1,24 +1,21 @@
 {
   "name": "sterett-admin",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "package.json",
-  "author": "Ethan Glover <hello@ethang.email>",
-  "type": "module",
-  "license": "MIT",
-  "engines": {
-    "node": ">=20"
-  },
-  "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "lint": "eslint . --fix --ignore-pattern \"dist/*\" --ignore-pattern **/*.mjs --ignore-pattern \".sanity/*\""
-  },
   "keywords": [
     "sanity"
   ],
+  "license": "MIT",
+  "author": "Ethan Glover <hello@ethang.email>",
+  "type": "module",
+  "main": "package.json",
+  "scripts": {
+    "build": "sanity build",
+    "dev": "sanity dev",
+    "lint": "eslint . --fix --ignore-pattern \"dist/*\" --ignore-pattern **/*.mjs --ignore-pattern \".sanity/*\"",
+    "start": "sanity start"
+  },
   "dependencies": {
     "@sanity/code-input": "^4.1.4",
     "@sanity/dashboard": "^4.0.0",
@@ -41,5 +38,8 @@
     "eslint": "^9.9.1",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
