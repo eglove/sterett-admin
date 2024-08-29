@@ -31,8 +31,8 @@
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^19.2.1",
-    "@ethang/project-builder": "^2.5.0",
+    "@ethang/eslint-config": "^19.2.3",
+    "@ethang/project-builder": "^2.5.1",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/lodash": "^4.17.7",
     "eslint": "^9.9.1",
