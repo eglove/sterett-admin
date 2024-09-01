@@ -3,7 +3,11 @@ import map from "lodash/map.js";
 import { UpdateItem } from "./update-item.js";
 
 const items = [
-  { children: "Added Beyonder Events", date: "03/06/2024", id: 0 },
+  {
+    children: "Added Beyonder Events",
+    date: "03/06/2024",
+    id: 0,
+  },
   {
     children: "Site upgraded to use QwikJS for performance improvements.",
     date: "12/15/2023",
@@ -30,14 +34,16 @@ const items = [
   {
     children: (
       <>
-        Expanded size of{" "}
+        Expanded size of
+        {" "}
         <a
           href="https://sterettcreekvillagetrustee.com/news"
           rel="noreferrer"
           target="_blank"
         >
           News page
-        </a>{" "}
+        </a>
+        {" "}
         to find a middle ground between mobile/desktop.
       </>
     ),
@@ -57,7 +63,8 @@ const items = [
   {
     children: (
       <>
-        Style Updates: Home page and calendar text will use same styles via{" "}
+        Style Updates: Home page and calendar text will use same styles via
+        {" "}
         <a
           href="https://tailwindcss.com/docs/typography-plugin"
           rel="noreferrer"
@@ -71,16 +78,19 @@ const items = [
   },
 ];
 
-export function UpdateItems() {
+export const UpdateItems = () => {
   return (
     <>
       {map(items, (item) => {
         return (
-          <UpdateItem date={item.date} key={item.id}>
+          <UpdateItem
+            date={item.date}
+            key={item.id}
+          >
             {item.children}
           </UpdateItem>
         );
       })}
     </>
   );
-}
+};

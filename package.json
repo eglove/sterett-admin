@@ -13,10 +13,11 @@
   "scripts": {
     "build": "sanity build",
     "dev": "sanity dev",
-    "lint": "eslint . --fix --ignore-pattern \"dist/*\" --ignore-pattern **/*.mjs --ignore-pattern \".sanity/*\"",
+    "lint": "eslint . --fix --ignore-pattern \"dist/*\" --ignore-pattern **/*.mjs --ignore-pattern \".sanity/*\" --ignore-pattern **/*.json",
     "start": "sanity start"
   },
   "dependencies": {
+    "@sanity/cli": "^3.56.0",
     "@sanity/code-input": "^4.1.4",
     "@sanity/dashboard": "^4.0.0",
     "@sanity/icons": "^3.4.0",
@@ -31,8 +32,8 @@
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^19.2.7",
-    "@ethang/project-builder": "^2.5.1",
+    "@ethang/eslint-config": "^19.2.8",
+    "@ethang/project-builder": "^2.5.8",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/lodash": "^4.17.7",
     "eslint": "^9.9.1",

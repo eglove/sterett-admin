@@ -6,14 +6,21 @@ type UpdateItemProperties = {
   readonly date?: string;
 } & Readonly<PropsWithChildren>;
 
-export function UpdateItem({ children, date }: UpdateItemProperties) {
+export const UpdateItem = ({ children, date }: UpdateItemProperties) => {
   if (date !== undefined) {
     return (
       <li>
-        <TimeDisplay date={date} /> - {children}
+        <TimeDisplay date={date} />
+        {" "}
+        -
+        {children}
       </li>
     );
   }
 
-  return <li>{children}</li>;
-}
+  return (
+    <li>
+      {children}
+    </li>
+  );
+};

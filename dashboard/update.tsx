@@ -21,7 +21,7 @@ export type DocumentListConfig = {
   types?: string[];
 };
 
-function UpdateWidget(): JSX.Element {
+const UpdateWidget = (): JSX.Element => {
   return (
     <DashboardWidgetContainer header="Latest Updates">
       <ul>
@@ -29,11 +29,11 @@ function UpdateWidget(): JSX.Element {
       </ul>
     </DashboardWidgetContainer>
   );
-}
+};
 
-export function updateWidget(config?: {
+export const updateWidget = (config?: {
   layout: LayoutConfig;
-}): DashboardWidget {
+}): DashboardWidget => {
   return {
     component: function component(): JSX.Element {
       return <UpdateWidget />;
@@ -41,4 +41,4 @@ export function updateWidget(config?: {
     layout: config?.layout,
     name: "update-widget",
   };
-}
+};

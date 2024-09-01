@@ -8,10 +8,12 @@ const formatDate = (date: string): string => {
   });
 };
 
-export function TimeDisplay({ date }: TimeDisplayProperties) {
+export const TimeDisplay = ({ date }: TimeDisplayProperties) => {
   return (
     <time>
-      <strong>{formatDate(date)}</strong>
+      <strong>
+        {formatDate(date)}
+      </strong>
     </time>
   );
-}
+};

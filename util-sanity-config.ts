@@ -1,7 +1,8 @@
 import { codeInput } from "@sanity/code-input";
 import { dashboardTool, projectUsersWidget } from "@sanity/dashboard";
 import { visionTool } from "@sanity/vision";
-import { deskTool } from "sanity/desk";
+// eslint-disable-next-line barrel/avoid-importing-barrel-files
+import { structureTool } from "sanity/structure";
 
 import { updateWidget } from "./dashboard/update.js";
 import { deskStructure } from "./desk-structure.js";
@@ -12,18 +13,24 @@ const widgets = [
 ];
 
 export const developmentPlugins = [
-  deskTool({
+  structureTool({
     structure: deskStructure,
   }),
-  dashboardTool({ title: "Updates", widgets }),
+  dashboardTool({
+    title: "Updates",
+    widgets,
+  }),
   visionTool(),
   codeInput(),
 ];
 
 export const productionPlugins = [
-  deskTool({
+  structureTool({
     structure: deskStructure,
   }),
-  dashboardTool({ title: "Updates", widgets }),
+  dashboardTool({
+    title: "Updates",
+    widgets,
+  }),
   codeInput(),
 ];
