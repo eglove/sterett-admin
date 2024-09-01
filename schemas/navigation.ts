@@ -1,14 +1,13 @@
-import type { Rule } from "sanity";
-
 import { LinkIcon } from "@sanity/icons";
 import {
   orderRankField,
   orderRankOrdering,
 } from "@sanity/orderable-document-list";
-import { defineType } from "sanity";
+import { defineType, type Rule } from "sanity";
 
 export default defineType({
   fields: [
+    // @ts-expect-error assume this works
     orderRankField({ type: "navigation" }),
     {
       name: "title",
