@@ -1,5 +1,4 @@
 import type {
-  ListItem,
   StructureResolver,
 } from "sanity/structure";
 
@@ -14,20 +13,16 @@ export const deskStructure: StructureResolver = (
     .items([
       ...S.documentTypeListItems(),
       orderableDocumentListDeskItem({
-        // @ts-expect-error type compat
         context,
-        // @ts-expect-error type compat
         S,
         title: "Trustees Order",
         type: "trustee",
-      }) as ListItem,
+      }),
       orderableDocumentListDeskItem({
-        // @ts-expect-error type compat
         context,
-        // @ts-expect-error type compat
         S,
         title: "Navigation Order",
         type: "navigation",
-      }) as ListItem,
+      }),
     ]);
 };

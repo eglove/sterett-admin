@@ -18,10 +18,14 @@ export default defineType({
     {
       name: "slug",
       options: {
-        slugify(input: string): string {
+        slugify(input: string) {
+          // false positives
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-call
           return toLower(input)
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
             .replaceAll(/\s+/gu, "-")
-            .slice(MIN_SLUG_CHARS, MAX_SLUG_CHARS);
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+            .slice(MIN_SLUG_CHARS, MAX_SLUG_CHARS) as string;
         },
         source: "title",
       },
