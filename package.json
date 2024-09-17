@@ -17,28 +17,28 @@
     "start": "sanity start"
   },
   "dependencies": {
-    "@sanity/cli": "^3.57.3",
+    "@sanity/cli": "^3.57.4",
     "@sanity/code-input": "^4.1.4",
     "@sanity/dashboard": "^4.0.0",
     "@sanity/icons": "^3.4.0",
     "@sanity/orderable-document-list": "^1.2.2",
-    "@sanity/vision": "^3.57.3",
-    "@types/react": "18.3.6",
+    "@sanity/vision": "^3.57.4",
+    "@types/react": "18.3.7",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-is": "^18.3.1",
-    "sanity": "^3.57.3",
+    "sanity": "^3.57.4",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^19.5.6",
+    "@ethang/eslint-config": "^19.5.8",
     "@ethang/project-builder": "^2.5.11",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/lodash": "^4.17.7",
     "eslint": "^9.10.0",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.5.0"
+    "typescript-eslint": "^8.6.0"
   },
   "engines": {
     "node": ">=20"
