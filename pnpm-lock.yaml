@@ -1798,8 +1798,8 @@ packages:
   '@lezer/php@1.0.2':
     resolution: {integrity: sha512-GN7BnqtGRpFyeoKSEqxvGvhJQiI4zkgmYnDk/JIyc7H7Ifc1tkPnUn/R2R8meH3h/aBf5rzjvU8ZQoyiNDtDrA==}
 
-  '@mdn/browser-compat-data@5.6.0':
-    resolution: {integrity: sha512-xArvLyzuk0r2m6hFVjTMYoLvhWwys3h7W8pO15tjSAea+U39cErWDNfoUs4g2C08HVg6bDHyDMBc0LC6FKRpVw==}
+  '@mdn/browser-compat-data@5.6.1':
+    resolution: {integrity: sha512-nlbmSX6z/o7pf+P7D2/r9h70w54Yzoik2HXqd0XTa6iHSsRXcfpKCsfl6Y6uH0LoSilPeGUB/hT93Ax/lH5hJQ==}
 
   '@napi-rs/wasm-runtime@0.2.4':
     resolution: {integrity: sha512-9zESzOO5aDByvhIAsOy9TbpZ0Ur2AJbUI7UT73kcUTS2mxAMHOBaa1st/jAymNoCtvrit99kkzT1FZuXVcgfIQ==}
@@ -9093,7 +9093,7 @@ snapshots:
       '@lezer/highlight': 1.2.1
       '@lezer/lr': 1.4.1
 
-  '@mdn/browser-compat-data@5.6.0': {}
+  '@mdn/browser-compat-data@5.6.1': {}
 
   '@napi-rs/wasm-runtime@0.2.4':
     dependencies:
@@ -10347,7 +10347,7 @@ snapshots:
 
   ast-metadata-inferer@0.8.0:
     dependencies:
-      '@mdn/browser-compat-data': 5.6.0
+      '@mdn/browser-compat-data': 5.6.1
 
   ast-types-flow@0.0.8: {}
 
@@ -11384,7 +11384,7 @@ snapshots:
 
   eslint-plugin-compat@6.0.1(eslint@9.10.0(jiti@1.21.6)):
     dependencies:
-      '@mdn/browser-compat-data': 5.6.0
+      '@mdn/browser-compat-data': 5.6.1
       ast-metadata-inferer: 0.8.0
       browserslist: 4.23.3
       caniuse-lite: 1.0.30001660
