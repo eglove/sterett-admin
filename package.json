@@ -13,7 +13,7 @@
   "scripts": {
     "build": "sanity build",
     "dev": "sanity dev",
-    "lint": "eslint . --fix --ignore-pattern \"dist/*\" --ignore-pattern **/*.mjs --ignore-pattern \".sanity/*\" --ignore-pattern **/*.json",
+    "lint": "eslint . --fix",
     "start": "sanity start"
   },
   "dependencies": {
